@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 class sin(object):
 
@@ -31,6 +32,9 @@ class sin(object):
 		plt.scatter(self.x, self.y, s=size, c=color)
 		plt.show()
 
+	def save(self, filename):
+
+		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
 
 class cos(object):
 
@@ -62,6 +66,10 @@ class cos(object):
 		plt.scatter(self.x, self.y, s=size, c=color)
 		plt.show()
 
+	def save(self, filename):
+
+		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
+
 
 class tan(object):
 
@@ -90,6 +98,10 @@ class tan(object):
 
 		plt.scatter(self.x, self.y, s=size, c=color)
 		plt.show()
+
+	def save(self, filename):
+
+		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
 
 
 class squareRoot(object):
@@ -120,6 +132,10 @@ class squareRoot(object):
 		plt.scatter(self.x, self.y, s=size, c=color)
 		plt.show()
 
+	def save(self, filename):
+
+		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
+
 
 class naturalLog(object):
 
@@ -148,6 +164,10 @@ class naturalLog(object):
 
 		plt.scatter(self.x, self.y, s=size, c=color)
 		plt.show()
+
+	def save(self, filename):
+
+		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
 
 
 class normalizedSin(object):
@@ -179,3 +199,7 @@ class normalizedSin(object):
 
 		plt.scatter(self.x, self.y, s=size, c=color)
 		plt.show()
+
+	def save(self, filename):
+
+		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
