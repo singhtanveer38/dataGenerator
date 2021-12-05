@@ -203,3 +203,6 @@ class normalizedSin(object):
 	def save(self, filename):
 
 		pd.DataFrame({"x":self.x, "y":self.y}).to_csv(filename, index=None)
+
+
+
